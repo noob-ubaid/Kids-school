@@ -1,11 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* div{
-    background: url('../assets/bg.png'),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
-    width: 100%;
-    height: 4000px;
-} */
 * {
   margin: 0;
   padding: 0;
@@ -35,18 +30,6 @@
 .hide {
   display: none;
 }
-.orange {
-  color: rgb(254, 163, 1);
-}
-.blue {
-  color: rgb(1, 172, 253);
-}
-.aqua {
-  color: rgb(5, 212, 223);
-}
-.purple {
-  color: rgb(93, 88, 239);
-}
 .btn-primary {
   background-color: rgb(17, 17, 17);
   border-radius: 12px;
@@ -56,6 +39,9 @@
   font-weight: 700;
   border: none;
   padding: 10px 47px;
+}
+.column {
+  flex-direction: column;
 }
 /*! Header section  */
 .header-logo-section {
@@ -111,8 +97,118 @@
   line-height: 25px;
   margin: 24px 0;
 }
+/*! main section  */
+.main-container {
+  background: url("../assets/bg.png"),
+    linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+}
+.curriculam-title {
+  color: rgb(0, 0, 0);
+  font-family: Quicksand;
+  font-size: 46px;
+  font-weight: 700;
+  padding-top: 60px;
+  text-align: center;
+}
+.curriculam-card div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.curriculam-card img {
+  padding: 65px 0 45px 0;
+}
+.curriculam-card h4 {
+  color: rgb(32, 32, 32);
+  font-family: Quicksand;
+  font-size: 24.52px;
+  font-weight: 700;
+  line-height: 30.65px;
+}
+.curriculam-card p {
+  color: rgb(128, 128, 128);
+  font-family: Raleway;
+  font-size: 15.09px;
+  font-weight: 500;
+  line-height: 28.3px;
+  text-align: center;
+  margin: 33px 0;
+}
+.cards {
+  justify-content: space-between;
+  margin-top: 80px;
+}
 
-/*! responsive for mobile device */
+.curriculam-card button {
+  font-family: Quicksand;
+  font-size: 15.09px;
+  border: none;
+  background: transparent;
+  font-weight: 700;
+  text-align: center;
+}
+.curriculam-card {
+  width: 368px;
+  height: 476px;
+  border-radius: 18.86px;
+  background: linear-gradient(
+      180deg,
+      rgb(222, 245, 255),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  
+}
+.card-bg-yellow {
+   background: linear-gradient(
+       180deg,
+       rgb(255, 244, 220),
+       rgba(255, 255, 255, 0) 40%
+     ),
+     rgb(255, 255, 255);
+ }
+.card-bg-purple {
+  background: linear-gradient(
+      180deg,
+      rgb(238, 225, 255),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+.yellow {
+  color: rgb(240, 170, 0);
+}
+.orange {
+  color: rgb(254, 163, 1);
+}
+.blue {
+  color: rgb(1, 172, 253);
+}
+.aqua {
+  color: rgb(5, 212, 223);
+}
+.purple {
+  color: rgb(93, 88, 239);
+}
+.arrows{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 80px;
+   gap: 12px;
+}
+.arrow{
+   background-color: rgb(254, 163, 1);
+   padding: 17px 22px;
+   border: none ;
+   font-size: 24px;
+   color: white;
+   border-radius: 30px;
+}
+/* ! responsive for mobile device */
+
 @media screen and (max-width: 576px) {
   .nav-links,
   .btn,
@@ -156,5 +252,14 @@
     line-height: 18px;
     text-align: center;
     margin: 18px 0;
+  }
+  .cards{
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .arrows{
+   display: none;
   }
 }
