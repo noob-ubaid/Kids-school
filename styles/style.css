@@ -73,6 +73,9 @@
   font-size: 20px;
   font-weight: 700;
 }
+.medium{
+  font-weight: 500;
+}
 
 /*! banner section  */
 .banner-container {
