@@ -342,6 +342,9 @@
 }
 .footer-right{
   margin-top: 32px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 /* ! responsive for mobile device */
 
