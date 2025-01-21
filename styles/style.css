@@ -287,6 +287,62 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
+.center {
+  justify-content: center;
+  margin-top: 80px;
+  padding-bottom: 60px;
+}
+
+/* !footer section  */
+.footer {
+  background-color: rgb(1, 172, 253);
+}
+.footer-container {
+  max-width: 1070px;
+  margin: 0 auto;
+  padding: 123px 0 174px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.footer-title-left {
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 42.14px;
+  font-weight: 700;
+  line-height: 39.51px;
+  margin-left: 10px;
+}
+.footer-title {
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 24px;
+  font-weight: 700;
+}
+.footer-links {
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+  margin-top: 32px;
+}
+.footer-link {
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 500;
+}
+.footer-description {
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  max-width: 400px;
+  margin-top: 35px;
+}
+.footer-right{
+  margin-top: 32px;
+}
 /* ! responsive for mobile device */
 
 @media screen and (max-width: 576px) {
@@ -366,6 +422,7 @@
     font-size: 9.13px;
     font-weight: 500;
     line-height: 17.12px;
+    margin-left: 20px;
   }
   .grid {
     gap: 12px;
@@ -384,11 +441,46 @@
     font-size: 16.25px;
     font-weight: 700;
     line-height: 20.75px;
-    }
+  }
   .card p {
     font-size: 10.22px;
     font-weight: 500;
     line-height: 19.16px;
     margin: 23px 0;
+  }
+  .center {
+    margin-top: 20px;
+    padding-bottom: 40px;
+  }
+  .footer-container {
+    padding-inline: 21px;
+    flex-direction: column;
+  }
+  .footer-title-left {
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 35.73px;
+    font-weight: 700;
+    line-height: 33.5px;
+  }
+  .footer-description {
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 22px;
+  }
+  .footer-title{
+    margin-top: 32px;
+  }
+  .footer-links{
+    margin-top: 27px;
+  }
+  .footer-right{
+    margin-top: 35px;
+  }
+  .footer-container{
+    padding: 66px 15px 60px;
   }
 }
