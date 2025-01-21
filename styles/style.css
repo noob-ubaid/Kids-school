@@ -331,7 +331,7 @@
   font-size: 20px;
   font-weight: 500;
 }
-.footer-description {
+.footer-description{
   color: rgb(255, 255, 255);
   font-family: Quicksand;
   font-size: 20px;
@@ -345,6 +345,18 @@
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.marquee-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+marquee{
+  color: black;
+  font-family: Quicksand;
+  font-size: 20px;
+  width: 100%;
+  padding-top: 12px;
 }
 /* ! responsive for mobile device */
 
